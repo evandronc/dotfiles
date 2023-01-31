@@ -1,0 +1,71 @@
+###############################################################################
+# Terminal aliases
+###############################################################################
+
+# Clean terminal logs
+alias cleanlogs='sudo rm -rf /private/var/log/asl/*.asl'
+
+# Clean shell history
+alias historyc='rm ~/.zsh_history'
+
+# Brew alias to services
+alias brews='brew services'
+
+# Reload shell config
+alias reload='source ~/.zshrc'
+
+# Alias to Sublime (subl)
+alias st='subl'
+
+alias killruby="ps aux | pgrep -lf 'rack|spring|rails|ruby|puma|sneakers' | awk '{print $1}' | xargs kill -9"
+
+###############################################################################
+# File navigation aliases
+###############################################################################
+
+# Go back 1 directory level
+alias ..='cd ../'
+
+# Go back 2 directory levels
+alias ...='cd ../../'
+
+# Go back 3 directory levels
+alias .3='cd ../../../'
+
+# Go back 4 directory levels
+alias .4='cd ../../../../'
+
+# Go back 5 directory levels
+alias .5='cd ../../../../../'
+
+# Go back 6 directory levels
+alias .6='cd ../../../../../../'
+
+alias ls='ls -G -h'
+alias la='ls -lA'
+alias ll='ls -FGlahs'
+alias lc='colorls --gs --sd'
+alias ri='ri -f ansi'
+
+###############################################################################
+# Ruby aliases
+###############################################################################
+
+alias be='bundle exec'
+alias bu='bundle update'
+alias bi='bundle install'
+alias bs='bundle show'
+alias bv='bundle install --path vendor'
+
+alias rserver='ruby -run -e httpd -- -p 9292 .'
+
+alias r='rails'
+alias RD='RAILS_ENV=development'
+alias RT='RAILS_ENV=test'
+alias RS='RAILS_ENV=staging'
+alias RP='RAILS_ENV=production'
+
+alias ss='rails s'
+alias ss4='rails s -p 4000'
+alias ss5='rails s -p 5000'
+alias ss6='rails s -p 6000'

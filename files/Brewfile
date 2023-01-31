@@ -1,0 +1,88 @@
+# Brew
+tap 'homebrew/bundle'
+tap 'homebrew/core'
+tap 'homebrew/services'
+
+brew 'cmake'
+brew 'readline'
+brew 'ack'
+
+brew 'bash'
+brew 'bash-completion'
+brew 'zsh'
+brew 'zsh-completions'
+brew 'zsh-autosuggestions'
+brew 'zsh-syntax-highlighting'
+
+brew 'git'
+brew 'htop'
+brew 'wget'
+brew 'masscan'
+brew 'nmap'
+brew 'mitmproxy'
+brew 'ssh-copy-id'
+brew 'gron'
+
+brew 'rbenv'
+brew 'ruby-build'
+
+brew 'pyenv'
+brew 'yarn'
+
+brew 'fzf'
+brew 'autojump'
+
+brew 'webp'
+brew 'gifsicle'
+brew 'ffmpeg', args: ['with-fontconfig', 'without-lame', 'without-qtkit', 'without-x264', 'without-xvid']
+brew 'librsvg'
+brew 'imagemagick', args: ['with-fontconfig', 'with-librsvg', 'with-webp']
+brew 'libpng'
+brew 'freetype'
+brew 'fontconfig'
+brew 'jpeg'
+brew 'libtiff'
+
+brew 'erlang'
+brew 'elixir'
+
+brew 'postgresql'
+brew 'mysql'
+
+# MAS
+brew 'mas'
+
+mas 'Evernote', id: 406056744
+mas 'Amphetamine', id: 937984704
+mas 'Annotate', id: 918207447
+mas 'Monosnap', id: 540348655
+mas 'Transmit', id: 403388562
+mas 'Tweetbot', id: 557168941
+mas 'iA Writer', id: 775737590
+mas 'Keynote', id: 409183694
+mas 'Slack', id: 803453959
+mas 'Moom', id: 419330170
+mas 'Cinch', id: 412529613
+mas 'DaisyDisk', id: 411643860
+mas 'Pocket', id: 568494494
+mas 'Crazy Tomato', id: 1105814268
+
+# CASK
+tap 'caskroom/cask'
+brew 'brew-cask-completion'
+
+# cask 'alfred'
+# cask 'dropbox'
+cask 'firefox'
+# cask 'google-chrome'
+cask 'gpgtools'
+cask 'imageoptim'
+cask 'iterm2'
+cask 'rescuetime'
+cask 'dash'
+cask 'postman'
+cask 'tower'
+cask 'spotify'
+cask 'franz'
+cask 'onyx'
+cask 'recordit'

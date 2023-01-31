@@ -1,0 +1,85 @@
+[color]
+  diff = auto
+  grep = auto
+  interactive = auto
+  status = auto
+  branch = auto
+  status = auto
+  ui = auto
+
+[alias]
+  b = branch
+  st = status -sb
+  s = status -sb
+  ci = commit
+  d = diff
+  pom = push origin master
+  ap = add --patch
+  ds = diff --staged
+  pf = push --force-with-lease
+  prune = fetch --prune
+  r = reset
+  fix = commit --amend
+  fixx = !git add . && git commit --amend --no-edit
+  wip = !git add . && git commit -am 'WIP :construction:'
+  stash-all = stash save --include-untracked
+  sp = stash pop
+  master = !git checkout master && git pull
+  back = checkout -
+  co = checkout
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
+  rc = rebase --continue
+  rim = rebase -i master
+  undo = reset --soft HEAD^
+  rank = shortlog -sn --no-merges
+  latest = for-each-ref --count=10 --sort=-committerdate --format='%(committerdate:short) %(refname:short)'
+  fup = log --since '1 day ago' --oneline --author diego.rossini@plataformatec.com.br
+  cl = "!git log $1..${2:-master} --oneline --no-merges --pretty=format:'- %s (%h)'"
+  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  ls = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]' --decorate --date=short
+
+[core]
+  editor = subl -w -n
+  excludesfile = ~/.gitignore
+  pager = diff-so-fancy | less --tabs=1,5 -R
+  whitespace = warn
+
+[include]
+  path = ~/.gitconfig-personal
+[includeIf "gitdir:~/Dropbox/Sync/Rails/ptec/"]
+  path = ~/.gitconfig-work
+
+[push]
+  default = current
+  followTags = true
+
+[merge]
+  ff = false
+  conflictstyle = diff3
+
+[pull]
+  rebase = true
+
+[commit]
+  template = ~/.gitmessage
+
+[status]
+  showUntrackedFiles = all
+
+[diff]
+  tool = icdiff
+[difftool]
+  prompt = false
+[difftool "icdiff"]
+  cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
+
+[gpg]
+  program = /usr/local/bin/gpg
+
+[github]
+  user = diegorv
+
+[pager]
+	branch = false
