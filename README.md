@@ -1,4 +1,4 @@
-# @diegorv .dotfiles
+# @evandronc .dotfiles
 > macOS and developer environment preferences with Brew/Git/Rbenv/ZSH
 
 # Setup
@@ -9,7 +9,7 @@ Copy this command into the terminal, and the setup will start.
 
 ```bash
 cd ~/
-git clone https://github.com/diegorv/dotfiles.git .dotfiles
+git clone https://github.com/evandronc/dotfiles.git .dotfiles
 cd .dotfiles && ./setup.sh
 ```
 
@@ -102,7 +102,7 @@ Just follow the instructions! Easy peasy lemon squeezy :metal:
 * Install .inputrc
 * Install iterm2_shell_integration
 * Install Oh-My-Zsh
-* Install my `diegorv.zsh-theme`
+* Install my `evandronc.zsh-theme`
 ![zsh-theme](https://cloud.githubusercontent.com/assets/24455/23412017/fcf518d4-fdb2-11e6-9d24-6f0f56ff2ef0.png)
 
 ## 5. Ruby configuration
